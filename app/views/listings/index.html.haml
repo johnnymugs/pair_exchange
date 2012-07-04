@@ -1,0 +1,19 @@
+%h1 Listing listings
+
+%table
+  %tr
+    %th Body
+    %th
+    %th
+    %th
+
+  - @listings.each do |listing|
+    %tr
+      %td= listing.body
+      %td= link_to 'Show', listing
+      %td= link_to 'Edit', edit_listing_path(listing)
+      %td= link_to 'Destroy', listing, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New Listing', new_listing_path

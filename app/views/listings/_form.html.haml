@@ -1,0 +1,13 @@
+= form_for @listing do |f|
+  -if @listing.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@listing.errors.count, "error")} prohibited this listing from being saved:"
+      %ul
+        - @listing.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :body
+    = f.text_field :body
+  .actions
+    = f.submit 'Save'
