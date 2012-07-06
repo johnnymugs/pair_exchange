@@ -6,7 +6,6 @@
 
 # Ignore bundler config
 /.bundle
-/.vimlog
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
@@ -14,3 +13,12 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# ignore stupid vimlog
+/.vimlog
+
+# ignore actual github oauth config
+/config/initializers/omniauth.rb
+
+#ignore real unicorn config
+/config/unicorn.rb

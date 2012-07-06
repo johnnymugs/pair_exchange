@@ -2,7 +2,8 @@ PairExchange::Application.routes.draw do
   resources :listings
   root :to => 'listings#index'
 
-
+  match "/auth/github/callback" => "sessions#create"
+  match "/logout/" => "sessions#destroy", as: :logout
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

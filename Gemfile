@@ -24,6 +24,7 @@ end
 gem 'jquery-rails'
 gem 'haml-rails'
 gem 'twitter-bootstrap-rails'
+gem 'omniauth-github'
 
 group :test, :development do
   gem 'rspec-rails'
