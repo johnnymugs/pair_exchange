@@ -29,6 +29,7 @@ gem 'omniauth-github'
 group :test, :development do
   gem 'rspec-rails'
   gem 'jasmine-rails'
+  gem 'webrat'
 end
 
 # To use ActiveModel has_secure_password
