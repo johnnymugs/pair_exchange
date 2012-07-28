@@ -1,4 +1,4 @@
-%h1 Listings
+%h1 Find Remote Pairs
 
 %table
   %tr
@@ -16,5 +16,5 @@
 
 %br
 
-- if current_user
-  = link_to 'New Listing', new_listing_path
+- if current_user || true
+  = link_to 'Add Listing', new_listing_path
