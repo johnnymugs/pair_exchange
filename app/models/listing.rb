@@ -3,4 +3,8 @@ class Listing < ActiveRecord::Base
 
   belongs_to :user
   validates :user, presence: true
+
+  def to_s
+    body
+  end
 end
