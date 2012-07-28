@@ -5,8 +5,6 @@
     %th Posted
     %th Description
     %th
-    %th
-    %th
 
   - @listings.each do |listing|
     %tr
@@ -14,8 +12,6 @@
         %em= listing.updated_at.to_date
       %td= listing.body
       %td= link_to 'Show', listing
-      %td= link_to 'Edit', edit_listing_path(listing)
-      %td= link_to 'Destroy', listing, :confirm => 'Are you sure?', :method => :delete
 
 %br
 
