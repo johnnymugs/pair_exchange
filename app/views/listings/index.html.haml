@@ -4,14 +4,12 @@
   %tr
     %th Posted
     %th Description
-    %th
 
   - @listings.each do |listing|
     %tr
       %td
         %em= listing.updated_at.to_date
-      %td= listing.body
-      %td= link_to 'Show', listing
+      %td= link_to listing
 
 %br
 
