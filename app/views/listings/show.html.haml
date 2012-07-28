@@ -3,6 +3,8 @@
 %p
   = @listing.body
 
+= link_to 'Back', listings_path
+\|
 = link_to 'Edit', edit_listing_path(@listing)
 \|
-= link_to 'Back', listings_path
+= link_to 'Delete', @listing, :confirm => 'Are you sure?', :method => :delete
