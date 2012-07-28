@@ -15,12 +15,12 @@ describe "listings/index" do
   describe "new listings link" do
     context "when the user is logged in" do
       let(:current_user) { double }
-      it { should contain("New Listing") }
+      it { should contain("Add Listing") }
     end
 
     context "when the user is not logged in" do
       let(:current_user) { nil }
-      it { should_not contain("New Listing") }
+      it { should_not contain("Add Listing") }
     end
   end
 end
