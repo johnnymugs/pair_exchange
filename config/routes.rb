@@ -5,6 +5,8 @@ PairExchange::Application.routes.draw do
   match "/auth/github/callback" => "sessions#create"
   match "/logout/" => "sessions#destroy", as: :logout
 
+  match '/about/' => 'static_pages#about'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -19,6 +19,7 @@
           = link_to 'PairExchange', root_path, class: 'brand'
           .container.nav-collapse
             %ul.nav
+              %li= link_to "About", about_path
               - if current_user
                 %li Welcome, #{current_user.name}!
                 %li= link_to "Sign me out!", logout_path
