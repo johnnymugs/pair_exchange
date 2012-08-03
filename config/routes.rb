@@ -6,6 +6,7 @@ PairExchange::Application.routes.draw do
   match "/logout/" => "sessions#destroy", as: :logout
 
   match '/about/' => 'static_pages#about'
+  match '/resources/' => 'static_pages#resources'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
